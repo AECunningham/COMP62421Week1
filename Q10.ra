@@ -1,0 +1,6 @@
+/* Question 10 */
+/* Assumed to mean return the individual lengths of all rivers (rather than their total length) */
+\project_{name,length}
+(\select_{country = "GB"}
+(\project_{name,length} river
+\join_{river = name} geo_river));

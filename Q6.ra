@@ -1,0 +1,2 @@
+/* Question 6 */
+\project_{name} (\project_{country} geo_sea \join_{code = country} country);
