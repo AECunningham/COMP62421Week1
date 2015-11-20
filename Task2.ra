@@ -1,0 +1,13 @@
+// Question 6
+\project_{name} (\project_{country} geo_sea \join_{code = country} country);
+
+
+// Question 7
+(\project_{name} lake) \union (\project_{name} river) \union (\project_{name} sea);
+
+// Question 10
+// Assumed to mean return the individual lengths of all rivers (rather than their total length)
+\project_{name,length}
+(\select_{country = "GB"}
+(\project_{name,length} river
+\join_{river = name} geo_river));
